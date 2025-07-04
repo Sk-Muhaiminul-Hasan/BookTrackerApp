@@ -10,8 +10,7 @@ public class DatabaseManager {
     public static void initializeDatabase() {
         try {
             Class.forName("org.sqlite.JDBC");
-            
-        }   catch (ClassNotFoundException e) {
+        } catch (ClassNotFoundException e) {
             System.out.println("Could not load JDBC driver: " + e.getMessage());
         }
 

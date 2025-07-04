@@ -15,4 +15,9 @@ public class Book {
     public String getAuthor() { return author; }
     public int getProgress() { return progress; }
     public boolean isRead() { return isRead; }
+
+    @Override
+    public String toString() {
+        return title + " by " + author + " (" + progress + "%)";
+    }
 }
